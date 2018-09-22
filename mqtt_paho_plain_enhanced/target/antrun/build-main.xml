@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <sshexec trust="true" password="SensibleThings" port="22" host="192.168.2.227" failonerror="false" command="mkdir --parents /home/pi/NetBeansProjects" username="pi" verbose="true"/>
+  <scp trust="true" file="/home/thomas/NetBeansProjects/mqtt_paho_plain_enhanced/target/mqtt_paho_plain_enhanced-1.0-jar-with-dependencies.jar" todir="pi:SensibleThings@192.168.2.227:/home/pi/NetBeansProjects" port="22" failonerror="true" verbose="true"></scp>
+  <sshexec trust="true" password="SensibleThings" port="22" host="192.168.2.227" failonerror="false" command="java -jar /home/pi/NetBeansProjects/mqtt_paho_plain_enhanced-1.0-jar-with-dependencies.jar" username="pi" verbose="true"/>
+</target>
+</project>
