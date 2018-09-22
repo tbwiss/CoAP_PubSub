@@ -1,0 +1,7 @@
+com/wiss/thom/output/MeasurementWriter.class
+com/wiss/thom/client/MqttApp.class
+com/wiss/thom/client/HiveSubscriber.class
+com/wiss/thom/client/SimpleMqttCallBack.class
+com/wiss/thom/client/RandomData.class
+com/wiss/thom/client/SslFactoryUtil.class
+com/wiss/thom/client/HivePublisher.class
