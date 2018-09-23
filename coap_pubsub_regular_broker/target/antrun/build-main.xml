@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <sshexec trust="true" password="SensibleThings" port="22" host="192.168.2.45" failonerror="false" command="mkdir --parents /home/pi/NetBeansProjects" username="pi" verbose="true"/>
+  <scp trust="true" file="/home/thomas/NetBeansProjects/coap_pubsub_regular_broker/target/coap_pubsub_regular_broker-1.0-SNAPSHOT-jar-with-dependencies.jar" todir="pi:SensibleThings@192.168.2.45:/home/pi/NetBeansProjects" port="22" failonerror="true" verbose="true"></scp>
+  <sshexec trust="true" password="SensibleThings" port="22" host="192.168.2.45" failonerror="false" command="java -jar /home/pi/NetBeansProjects/coap_pubsub_regular_broker-1.0-SNAPSHOT-jar-with-dependencies.jar" username="pi" verbose="true"/>
+</target>
+</project>
