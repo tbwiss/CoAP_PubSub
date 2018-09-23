@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1514730010292
+Build-Jdk: 1.8.0_151
+Built-By: thomas
+Bundle-Description: Java socket abstraction for datagram transports (UDP
+ , DTLS, etc.)
+Bundle-DocURL: http://www.eclipse.org/
+Bundle-License: http://www.eclipse.org/org/documents/epl-v10.php, http:/
+ /www.eclipse.org/org/documents/edl-v10.php
+Bundle-ManifestVersion: 2
+Bundle-Name: element-connector
+Bundle-SymbolicName: org.eclipse.californium.element-connector
+Bundle-Vendor: Eclipse Foundation
+Bundle-Version: 1.1.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.wiss.thom.elements.dtls;uses:="org.eclipse.californi
+ um.elements";version="1.1.0",com.wiss.thom.elements.sctp;uses:="org.ecl
+ ipse.californium.elements,org.eclipse.californium.elements.tcp";version
+ ="1.1.0",com.wiss.thom.elements.ws;uses:="org.eclipse.californium.eleme
+ nts";version="1.1.0",com.wiss.thom.elements.wss;uses:="javax.net.ssl,or
+ g.eclipse.californium.elements,org.eclipse.californium.elements.tcp";ve
+ rsion="1.1.0",org.eclipse.californium.elements;version="1.1.0",org.ecli
+ pse.californium.elements.tcp;version="1.1.0";uses:="io.netty.buffer,io.
+ netty.channel,io.netty.handler.codec,javax.net.ssl,org.eclipse.californ
+ ium.elements",org.eclipse.californium.elements.util;version="1.1.0",org
+ .eclipse.californium.elements.category;version="1.1.0",org.eclipse.cali
+ fornium.elements.rule;version="1.1.0",org.eclipse.californium.elements.
+ runner;version="1.1.0"
+Import-Package: io.netty.bootstrap;version="[4.1,5)",io.netty.buffer;ver
+ sion="[4.1,5)",io.netty.channel;version="[4.1,5)",io.netty.channel.nio;
+ version="[4.1,5)",io.netty.channel.pool;version="[4.1,5)",io.netty.chan
+ nel.socket;version="[4.1,5)",io.netty.channel.socket.nio;version="[4.1,
+ 5)",io.netty.handler.codec;version="[4.1,5)",io.netty.handler.ssl;versi
+ on="[4.1,5)",io.netty.handler.timeout;version="[4.1,5)",io.netty.util.c
+ oncurrent;version="[4.1,5)",com.sun.nio.sctp,com.wiss.thom.elements.ws,
+ javax.net.ssl,org.eclipse.californium.elements;version="[1.1,2)",org.ec
+ lipse.californium.elements.tcp;version="[1.1,2)",org.eclipse.californiu
+ m.scandium;version="[1.1,2)",org.eclipse.californium.scandium.config;ve
+ rsion="[1.1,2)",org.eclipse.californium.scandium.dtls.pskstore;version=
+ "[1.1,2)",org.java_websocket,org.java_websocket.client,org.java_websock
+ et.drafts,org.java_websocket.handshake,org.java_websocket.server
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-3.0.0.201509101326
