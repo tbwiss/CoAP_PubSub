@@ -1,5 +1,5 @@
 # CoAP_PubSub
-A CoAP Publish/Subscribe library developed for feasibility purpose and performance evaluations
+IoT application layer protocol stacks for feasibility purpose and performance evaluations
 
 Developed as part of the Master by Research study at Mid-Sweden university (https://www.miun.se/) from March 2017 until Sept 2018.
 
